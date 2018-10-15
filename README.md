@@ -1,1 +1,1 @@
-# jee-03
+# Session bean EJB - CRUD Entity Manager
