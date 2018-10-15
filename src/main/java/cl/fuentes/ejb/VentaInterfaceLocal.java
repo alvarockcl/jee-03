@@ -1,6 +1,5 @@
 package cl.fuentes.ejb;
 
-import cl.fuentes.model.Producto;
 import cl.fuentes.model.Venta;
 import java.util.List;
 import javax.ejb.Local;
