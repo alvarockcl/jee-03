@@ -4,6 +4,7 @@
 	<jta-data-source>java:jboss/core</jta-data-source>
 	<class>cl.fuentes.model.Producto</class>
 	<class>cl.fuentes.model.Venta</class>
+	<class>cl.fuentes.model.Vendedor</class>
 	<exclude-unlisted-classes>true</exclude-unlisted-classes>
 	<properties>
 	<property name="hibernate.hbm2ddl.auto" value="create-drop"/>

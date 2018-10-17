@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import cl.fuentes.ejb.ProductoInterfaceLocal;
+import cl.fuentes.ejb.VendedorInterfaceLocal;
 import cl.fuentes.ejb.VentaInterfaceLocal;
 import cl.fuentes.model.*;
 import sun.font.CreatedFontTracker;
@@ -23,6 +24,9 @@ public class Poblar extends HttpServlet {
 	private ProductoInterfaceLocal prodloc;
 	@EJB
 	private VentaInterfaceLocal venloc;
+	
+	@EJB
+	private VendedorInterfaceLocal vendedorloc;
 	
 	
     public Poblar() {
@@ -40,6 +44,17 @@ public class Poblar extends HttpServlet {
 	     Producto p = new Producto("Alfombra",5); 
 	     prodloc.create(p);
 	     venloc.create(new Venta((LocalDate.now()), 200000, 5, p));
+	     
+	     Vendedor ven = new Vendedor();
+	     ven.setNombre("Alvaro");
+	     ven.setApellido("Fuentes");
+	     ven.setCargo("Jefe ventas");
+	     vendedorloc.create(ven);
+	     
+	     
+	     
+	     
+	     
 	     out.println("Fin poblar datos");
 	}
 
