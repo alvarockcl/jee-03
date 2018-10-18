@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>cl.fuentes.servlet.Poblar</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Productoingreso</servlet-name>
+  	<display-name>Productoingreso</display-name>
+  	<description></description>
+  	<servlet-class>cl.fuentes.servlet.Productoingreso</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Poblar</servlet-name>
   	<url-pattern>/Poblar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Productoingreso</servlet-name>
+  	<url-pattern>/Productoingreso</url-pattern>
   </servlet-mapping>
 </web-app>
