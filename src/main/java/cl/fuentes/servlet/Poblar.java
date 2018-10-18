@@ -14,6 +14,8 @@ import cl.fuentes.ejb.ProductoInterfaceLocal;
 import cl.fuentes.ejb.VendedorInterfaceLocal;
 import cl.fuentes.ejb.VentaInterfaceLocal;
 import cl.fuentes.model.Producto;
+import cl.fuentes.model.Vendedor;
+import cl.fuentes.model.Venta;
 
 
 
@@ -34,7 +36,7 @@ public class Poblar extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-/*
+
 		 PrintWriter out = response.getWriter();
 	     out.println("Inicio poblar datos");
 	     prodloc.create(new Producto("Mesa oficina",100));
@@ -51,11 +53,11 @@ public class Poblar extends HttpServlet {
 	     ven.setCargo("Jefe ventas");
 	     vendedorloc.create(ven);
 	     
-	*/     
+	    
 	     
 	     
 	     
-	     //out.println("Fin poblar datos");
+	     out.println("Fin poblar datos");
 	}
 
 }
